@@ -1,3 +1,4 @@
+# we create an empty list to store our data
 transHistory = []
 
 while True:
@@ -6,6 +7,7 @@ while True:
     except:
         print("Enter a number!")
         continue
+    # An empty dictionary in the loop to store any transaction type with the key and corresponding value
     dic = {}
     
 
@@ -16,6 +18,8 @@ while True:
         incomeAmount = int(input("Income amount: "))
         dic["type"] = "income"
         dic["amount"] = incomeAmount
+        
+        # every dictionary should be added (appended) to the empty transaction history
         transHistory.append(dic)
         continue
 
